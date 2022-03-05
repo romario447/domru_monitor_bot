@@ -10,6 +10,6 @@ from datetime import datetime, date
 g = Grab()                                          # Инициализация объекта для граббинга страницы
 g.go('https://lkz.ahml.ru/borrower/')          # Авторизация на сайте детализации Квант-телеком
 g.set_input_by_id('b_auth_login', '00087432')     # Вводим логин
-g.set_input_by_id('b_auth_password', 'GSQ3SSq4')    # Водим пароль
+g.set_input_by_id('b_auth_password', '')    # Водим пароль
 g.submit()                                          # Отсылаем форму
 g.go(url) 
